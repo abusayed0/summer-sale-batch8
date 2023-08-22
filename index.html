@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- font awesome link  -->
+    <script src="https://kit.fontawesome.com/6e6041f935.js" crossorigin="anonymous"></script>
 
     <style>
         body {
@@ -23,22 +25,235 @@
 <body class="max-w-[1920px] mx-auto">
     <header>
         <!-- banner start  -->
-        <section class="flex flex-col md:flex-row items-center gap-5 px-3 md:px-8 lg:px-20 py-4 md:py-6 lg:py-8 bg-[#F9F6E2]">
+        <section
+            class="flex flex-col md:flex-row items-center gap-5 px-2 md:px-8 lg:px-20 py-4 md:py-6 lg:py-8 bg-[#F9F6E2]">
             <div class="w-full md:w-1/2 text-center">
                 <p class="uppercase text-2xl md:text-3xl font-medium">---Sale Fever---</p>
-                <h1 class="mt-3 md:mt-5 lg:mt-8 text-3xl md:text-5xl font-bold">Purchase Taka 200 or above & <span class="text-[#E527B2]">get 20% off</span></h1>
-                <h4 class="mt-5 md:mt-7 lg:mt-12 text-xl md:text-2xl font-medium">Use Promo Code <span class="inline-block font-semibold bg-[#E527B2] text-white px-5 py-3 rounded-lg">SELL200</span></h4>
+                <h1 class="mt-3 md:mt-5 lg:mt-8 text-3xl md:text-5xl font-bold">Purchase Taka 200 or above & <span
+                        class="text-[#E527B2]">get 20% off</span></h1>
+                <h4 class="mt-5 md:mt-7 lg:mt-12 text-xl md:text-2xl font-medium">Use Promo Code <span
+                        class="inline-block font-semibold bg-[#E527B2] text-white px-5 py-3 rounded-lg">SELL200</span>
+                </h4>
             </div>
             <div class="w-full md:w-1/2">
                 <img class="w-full max-h-[500px] object-contain" src="images/Summer 1.png" alt="">
             </div>
         </section>
-
     </header>
-    <main>
+    <main class="my-16 mx-2 md:mx-8 lg:mx-20">
+        <section class="grid grid-cols-1  lg:grid-cols-4 gap-4">
+            <!-- cards start-->
+            <div class="lg:col-span-3">
+                <!-- kitchenware start  -->
+                <div>
+                    <h2 class="text-4xl font-semibold">Kitchenware</h2>
+                    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <!-- cart1  -->
+                        <div id="product1"  class="cursor-pointer p-4 rounded-lg border-2">
+                            <div class="bg-[rgba(17,17,17,0.05)] rounded-lg">
+                                <img class="w-full h-[140px] object-contain" src="images/prod1.png" alt="">
+                            </div>
+                            <div class="mt-5 flex flex-col gap-2 items-center">
+                                <div>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-regular fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-regular fa-star text-3xl text-[#FFC107]"></i>
+                                </div>
+                                <h3 id="product1-name" class="text-xl font-semibold">K. Accessories</h3>
+                                <p class="text-xl text-[rgba(17,17,17,0.50)]"><span id="product1-price">39.00</span> TK</p>
+                            </div>
+                        </div>
+                        <!-- card2  -->
+                        <div id="product2" class="cursor-pointer p-4 rounded-lg border-2">
+                            <div class="bg-[rgba(17,17,17,0.05)] rounded-lg">
+                                <img class="w-full h-[140px] object-contain" src="images/prod2.png" alt="">
+                            </div>
+                            <div class="mt-5 flex flex-col gap-2 items-center">
+                                <div>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-regular fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-regular fa-star text-3xl text-[#FFC107]"></i>
+                                </div>
+                                <h3 id="product2-name" class="text-xl font-semibold">K. Accessories</h3>
+                                <p id="product2-price" class="text-xl text-[rgba(17,17,17,0.50)]">25.00 TK</p>
+                            </div>
+                        </div>
+                        <!-- card3  -->
+                        <div id="product3" class="cursor-pointer p-4 rounded-lg border-2">
+                            <div class="bg-[rgba(17,17,17,0.05)] rounded-lg">
+                                <img class="w-full h-[140px] object-contain" src="images/prod3.png" alt="">
+                            </div>
+                            <div class="mt-5 flex flex-col gap-2 items-center">
+                                <div>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-regular fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-regular fa-star text-3xl text-[#FFC107]"></i>
+                                </div>
+                                <h3 id="product3-name" class="text-xl font-semibold">Home Cooker</h3>
+                                <p class="text-xl text-[rgba(17,17,17,0.50)]"><span id="product3-price">49.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sportswear start  -->
+                <div class="mt-12">
+                    <h2 class="text-4xl font-semibold">Sportswear</h2>
+                    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <!-- cart4  -->
+                        <div id="product4" class="cursor-pointer p-4 rounded-lg border-2">
+                            <div class="bg-[rgba(17,17,17,0.05)] rounded-lg">
+                                <img class="w-full h-[140px] object-contain" src="images/prod4.png" alt="">
+                            </div>
+                            <div class="mt-5 flex flex-col gap-2 items-center">
+                                <div>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-regular fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-regular fa-star text-3xl text-[#FFC107]"></i>
+                                </div>
+                                <h3 id="product4-name" class="text-xl font-semibold">Sports Back Cap</h3>
+                                <p class="text-xl text-[rgba(17,17,17,0.50)]"><span id="product4-price">49.00</span> TK</p>
+                            </div>
+                        </div>
+                        <!-- card5  -->
+                        <div id="product5" class="cursor-pointer p-4 rounded-lg border-2">
+                            <div class="bg-[rgba(17,17,17,0.05)] rounded-lg">
+                                <img class="w-full h-[140px] object-contain" src="images/prod5.png" alt="">
+                            </div>
+                            <div class="mt-5 flex flex-col gap-2 items-center">
+                                <div>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-regular fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-regular fa-star text-3xl text-[#FFC107]"></i>
+                                </div>
+                                <h3 id="product5-name" class="text-xl font-semibold">Full Jersey Set</h3>
+                                <p class="text-xl text-[rgba(17,17,17,0.50)]"><span id="product5-price">69.00</span> TK</p>
+                            </div>
+                        </div>
+                        <!-- card6  -->
+                        <div id="product6" class="cursor-pointer p-4 rounded-lg border-2">
+                            <div class="bg-[rgba(17,17,17,0.05)] rounded-lg">
+                                <img class="w-full h-[140px] object-contain" src="images/prod6.png" alt="">
+                            </div>
+                            <div class="mt-5 flex flex-col gap-2 items-center">
+                                <div>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-regular fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-regular fa-star text-3xl text-[#FFC107]"></i>
+                                </div>
+                                <h3 id="product6-name" class="text-xl font-semibold">Sports cates</h3>
+                                <p class="text-xl text-[rgba(17,17,17,0.50)]"><span id="product6-price">159.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- furniture start  -->
+                <div class="mt-12">
+                    <h2 class="text-4xl font-semibold">Furniture</h2>
+                    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <!-- cart7  -->
+                        <div id="product7" class="cursor-pointer p-4 rounded-lg border-2">
+                            <div class="bg-[rgba(17,17,17,0.05)] rounded-lg">
+                                <img class="w-full h-[140px] object-contain" src="images/prod7.png" alt="">
+                            </div>
+                            <div class="mt-5 flex flex-col gap-2 items-center">
+                                <div>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-regular fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-regular fa-star text-3xl text-[#FFC107]"></i>
+                                </div>
+                                <h3 id="product7-name" class="text-xl font-semibold">Single Relax Chair</h3>
+                                <p class="text-xl text-[rgba(17,17,17,0.50)]"><span id="product7-price">185.00</span> TK</p>
+                            </div>
+                        </div>
+                        <!-- card8  -->
+                        <div id="product8" class="cursor-pointer p-4 rounded-lg border-2">
+                            <div class="bg-[rgba(17,17,17,0.05)] rounded-lg">
+                                <img class="w-full h-[140px] object-contain" src="images/prod8.png" alt="">
+                            </div>
+                            <div class="mt-5 flex flex-col gap-2 items-center">
+                                <div>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-regular fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-regular fa-star text-3xl text-[#FFC107]"></i>
+                                </div>
+                                <h3 id="product8-name" class="text-xl font-semibold">Children play</h3>
+                                <p class="text-xl text-[rgba(17,17,17,0.50)]"><span id="product8-price">299.00</span> TK</p>
+                            </div>
+                        </div>
+                        <!-- card9  -->
+                        <div id="product9" class="cursor-pointer p-4 rounded-lg border-2">
+                            <div class="bg-[rgba(17,17,17,0.05)] rounded-lg">
+                                <img class="w-full h-[140px] object-contain" src="images/prod9.png" alt="">
+                            </div>
+                            <div class="mt-5 flex flex-col gap-2 items-center">
+                                <div>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-solid fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-regular fa-star text-3xl text-[#FFC107]"></i>
+                                    <i class="fa-regular fa-star text-3xl text-[#FFC107]"></i>
+                                </div>
+                                <h3 id="product9-name" class="text-xl font-semibold">Flexible Sofa</h3>
+                                <p class="text-xl text-[rgba(17,17,17,0.50)]"><span id="product9-price">339.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- carts start  -->
+            <div>
+                <div class="mt-[64px]">
+                    <!-- coupen field  -->
+                    <form class="p-5 rounded-lg border" autocomplete="off">
+                        <p class="font-medium text-2xl">Have a coupon?</p>
+                        <div class="mt-3 relative">
+                            <input class=" w-full p-1 border rounded-lg text-xl" placeholder="Coupon code" type="text"
+                                name="" id="coupon-field">
+                            <button id="btn-coupon-apply"
+                                class="text-xl text-white px-2 h-full rounded-r-lg absolute right-0" disabled style="background-color:#F48DD6;">Apply</button>
+                        </div>
+                    </form>
+                    <div class="mt-5 p-5 border rounded-lg">
+                        <div>
+                            <h3 class="text-center text-xl font-semibold underline">Added Products - <span id="total-added">0</span></h3>
+                            <ul class="mt-3 list-decimal list-inside flex flex-col gap-2" id="added-products-container">
+
+                            </ul>
+                        </div>
+                        <hr class="my-7">
+                        <!-- calculation -->
+                        <div class="flex flex-col gap-3">
+                            <h4 class="text-2xl font-medium">Total Price: <span id="total-price" class="text-[rgba(17,17,17,0.50)]">0.00</span> TK</h4>
+                            <h4 class="text-2xl font-medium">Discount: <span id="discount-element" class="text-[rgba(17,17,17,0.50)]">0.00</span> TK</h4>
+                            <h4 class="text-2xl font-medium">Total: <span id="discount-total-price" class="text-[rgba(17,17,17,0.50)]">0.00</span> TK</h4>
+                        </div>
+                        <hr class="my-5">
+                        <button id="btn-make-purchase" class="text-xl font-semibold text-white rounded-lg w-full py-3" disabled style="background-color:#F48DD6;">Make Purchase</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
     </main>
-
+    <script src="js/utilities.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
