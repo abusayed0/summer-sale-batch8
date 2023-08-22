@@ -54,6 +54,11 @@ document.getElementById("btn-coupon-apply").addEventListener("click", function (
 
 });
 
-document.getElementById("btn-make-purchase").addEventListener("click", function(e){
-    console.log(e.target);
+document.getElementById("btn-make-purchase").addEventListener("click", function(){
+    my_modal_1.showModal();
+}
+);
+
+document.getElementById("btn-go-home").addEventListener("click", function(){
+    window.location.reload();
 });
