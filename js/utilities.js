@@ -40,7 +40,10 @@ function addToCarts(productPriceId, productNameElementId){
     const newTotalPrice = previousTotalPrice + productPrice;
     setElementInnerTextById("total-price", newTotalPrice);
     
-    newTotalPrice >= 200 && makeBtnEnable("btn-coupon-apply");
+    if(newTotalPrice >= 200) {
+        makeBtnEnable("btn-coupon-apply");
+        document.getElementById("coupon-field").removeAttribute("disabled");
+    }
     newTotalPrice > 0 && makeBtnEnable("btn-make-purchase");
 
     // extra
