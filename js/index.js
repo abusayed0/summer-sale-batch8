@@ -45,10 +45,12 @@ document.getElementById("btn-coupon-apply").addEventListener("click", function (
     if (userCoupon == availableCoupon) {
         isDiscountAdded = true;
         discountCalulationAndUpdate(true);
+        document.getElementById("discount-status").classList.remove("hidden");
     }
     else{
         discountCalulationAndUpdate(false);
         isDiscountAdded = false;
+        document.getElementById("discount-status").classList.add("hidden");
         alert("Invalid coupon.");
     }
 
